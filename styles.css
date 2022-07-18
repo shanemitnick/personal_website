@@ -4,6 +4,15 @@
   flex-direction: row;
 }
 
+#car {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 110px;
+  left: 0px;
+  color:#e9aa42;
+}
+
 #left-side {
   width: 50%;
   background-color: var(--bs-gray-700);

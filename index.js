@@ -14,4 +14,10 @@ function reveal() {
   }
 }
 
+
+document.addEventListener('mousemove', function(event) {
+    const elem = document.getElementById("car");
+    elem.style.left = event.pageX;
+}, true);
+
 window.addEventListener("scroll", reveal);
