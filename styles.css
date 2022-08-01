@@ -29,10 +29,6 @@
   text-align: right;
 }
 
-.left-side .h1 {
-  background-color: red;
-}
-
 .landing-text {
   margin-top: 50%;
   color: var(--bs-gray-700);
@@ -100,6 +96,65 @@
   font-weight: 200;
 }
 
+.small-text {
+  font-size: larger;
+  margin-bottom: 5px;
+  color: #e9aa42;
+  font-weight: 200;
+}
+
+.center {
+  text-align: center;
+}
+
+.project-row {
+  height: auto;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  row-gap: 5px;
+}
+
+.github {
+  color: #e9aa42;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-box:hover {
+    background: #e9aa42;
+    color: #555;
+}
+.project-box:hover .project-description{
+  color: var(--bs-gray-700);
+}
+.project-box:hover .project-title{
+  color: var(--bs-gray-700);
+}
+
+.project-box:hover .github{
+  color: var(--bs-gray-700);
+}
+
+.project-title {
+  text-align: center;
+  color: #e9aa42;
+  font-size: 28px;
+
+}
+
+.project-description {
+  color: #e9aa42;
+  font-weight: 200;
+  text-align: center;
+}
 
 .bridge-section {
   height: 200px;
@@ -132,8 +187,8 @@ hr.bridge-road {
 
 .career-section {
   display: block;
-  overflow: auto;
   background-color: var(--bs-gray-700);
+
 }
 
 .reveal{
@@ -151,7 +206,6 @@ hr.bridge-road {
 .hello-cover {
   height: 100px;
   width: 100px;
-  background-color: red;
   position: relative;
   width: 100%;
   top: -45px;
@@ -164,13 +218,14 @@ hr.bridge-road {
   font-weight: lighter;
 }
 
-.phone-icon{
+.contact-icon{
   color: #e9aa42;
+  margin: 6px 12px 6px 12px;
 }
 
 .contact-details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -194,6 +249,59 @@ hr.bridge-road {
 .shane-photo {
   width: 150px;
   margin: 20px;
+}
+
+
+.technologies-section {
+  height: 250px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-technologies {
+  width: 90%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+
+.tech-logo {
+  height: 120px;
+  width: auto;
+  margin: 20px;
+  margin-right: 12px;
+}
+
+.personal-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SCROLL BAR STUFF */ 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bs-gray-700);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media only screen and (max-width: 800px) {

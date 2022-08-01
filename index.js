@@ -17,7 +17,8 @@ function reveal() {
 
 document.addEventListener('mousemove', function(event) {
     const elem = document.getElementById("car");
-    elem.style.left = event.pageX;
+    elem.style.left = event.clientX;
+    console.log(event);
 }, true);
 
 window.addEventListener("scroll", reveal);
